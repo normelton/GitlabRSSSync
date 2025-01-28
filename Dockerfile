@@ -4,6 +4,7 @@ COPY go.mod /app/
 WORKDIR /app
 RUN go mod download
 COPY . /app
+RUN go mod tidy
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o rss_sync .
 
 COPY wait-for-it.sh /app/
