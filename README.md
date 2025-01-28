@@ -55,7 +55,7 @@ feeds:
 
 
 ## Docker
-A Docker image is made available on [DockerHub](https://hub.docker.com/r/adamhf/gitlabrsssync)
+A Docker image is made available on [DockerHub](https://hub.docker.com/r/normelton/gitlabrsssync)
 
 ### Required Environment Variables
 * GITLAB_API_BASE_URL - The base Gitlab URL used, needs to be set to `https://gitlab.com/api/v4` for Gitlab hosted Gitlab.
@@ -71,7 +71,7 @@ issues in the projects you specify in the config file.
 
 #### Via Docker
 ```bash
-docker run -e GITLAB_API_TOKEN=<INSERT_TOKEN> -e CONFIG_DIR=/app -v REDIS_URL=<REDIS_URL> -v REDIS_PASSWORD=<REDIS_PASSWORD> -v ${PWD}:/config adamhf/rss-sync:latest
+docker run -e GITLAB_API_TOKEN=<INSERT_TOKEN> -e CONFIG_DIR=/app -v REDIS_URL=<REDIS_URL> -v REDIS_PASSWORD=<REDIS_PASSWORD> -v ${PWD}:/config normelton/gitlabrsssync:latest
 ```
 
 #### Via docker-compose

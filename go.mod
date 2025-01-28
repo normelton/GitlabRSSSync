@@ -1,4 +1,4 @@
-module github.com/adamhf/rss_gitlab_sync
+module github.com/normelton/rss_gitlab_sync
 
 require (
 	github.com/PuerkitoBio/goquery v1.5.0 // indirect
